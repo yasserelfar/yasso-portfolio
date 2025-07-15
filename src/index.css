@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    color: var(--black);
+        font-family: Muli, sans-serif;
+        font-size: 14px;
+        line-height: 180%;
+}
