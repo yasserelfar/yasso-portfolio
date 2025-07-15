@@ -6,7 +6,7 @@ export default function Navbar() {
       {/* Navigation links on the right */}
       <ul className="flex gap-4 sm:gap-10 text-white text-sm sm:text-base font-normal">
         <li>
-          <a href="#Port" className="inline-block hover:text-orange-500 duration-300 hover:scale-110 transition">
+          <a href="#portfolio" className="inline-block hover:text-orange-500 duration-300 hover:scale-110 transition">
             My Portfolio</a>
         </li>
         <li>

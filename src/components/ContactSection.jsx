@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function ContactSection() {
   return (
-    <section className="w-full flex flex-row min-h-[300px] lg:min-h-[400px] bg-black relative overflow-hidden">
+    <section id="contact" className="w-full flex flex-row min-h-[300px] lg:min-h-[400px] bg-black relative overflow-hidden">
       {/* Left: Title */}
       <div className="flex-1 flex items-center justify-center bg-black px-2 sm:px-4 py-8 lg:py-0">
         <h2 className="text-xl sm:text-3xl lg:text-6xl font-extrabold uppercase text-white text-center">
