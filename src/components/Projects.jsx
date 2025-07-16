@@ -6,6 +6,7 @@ import BookStore from '../assets/BookStore.png'
 var signifyLink="https://www.linkedin.com/posts/yasser-muhamed-00b534234_graduationproject-signlanguage-machinelearning-activity-7349886752381120513-74Qf?utm_source=share&utm_medium=member_android&rcm=ACoAADp0igsBMb0bLzWBBnG6F5PNOFM4F-j8Wcs"
 var FeedMeLink="https://drive.google.com/file/d/1uCY4-qeLGFfxZn1vGTJbVn751M2htifG/view?usp=drivesdk"
 var BookStoreLink="https://drive.google.com/file/d/1uCseK29UpGRyQcq9rcsgN1Y2ajhpJI71/view?usp=drivesdk"
+var AstroLink="https://github.com/yasserelfar/Astro_React/tree/origin"
 export default function Projects() {  
   return (
     <section id="portfolio" className="relative w-full bg-black text-white py-20 px-4 md:px-0 flex flex-col items-center overflow-visible">
@@ -26,7 +27,7 @@ export default function Projects() {
           title=" Astro fashion "
           description=" The website offers an easy-to-use platform that includes a variety of clothes and accessories, thanks to easy 
                         navigation, high-quality visuals and safe checkout, it It ensures a seamless shopping experience"
-          link="#"
+          link={AstroLink}
           tags={["React", "E-commerce", "Design"]}
           reverse={true}
         />
