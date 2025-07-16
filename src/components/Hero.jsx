@@ -1,4 +1,3 @@
-// import yassoImg from '../assets/yasso.jpg';
 import "./hero.css"
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";

@@ -16,7 +16,7 @@ export default function ProjectsCard({
 
   return (
     <motion.div
-      className={`relative flex ${flexDirection} bg-black text-white my-12 lg:my-24 max-w-6xl w-11/12 mx-auto items-stretch rounded-lg overflow-hidden shadow-lg gap-6`}
+      className={`relative flex ${flexDirection} bg-black text-white my-10 lg:my-14 max-w-6xl w-11/12 mx-auto items-stretch rounded-lg overflow-hidden shadow-lg gap-6`}
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
