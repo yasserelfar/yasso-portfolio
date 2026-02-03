@@ -9,10 +9,13 @@ export default function ProjectsCard({
   reverse = false,
 }) {
   // flex-col-reverse على الموبايل، flex-row أو flex-row-reverse على lg
-  const flexDirection = reverse ? "flex-col-reverse lg:flex-row-reverse" : "flex-col-reverse lg:flex-row";
+  const flexDirection = reverse
+    ? "flex-col-reverse lg:flex-row-reverse"
+    : "flex-col-reverse lg:flex-row pl-0";
   const imagePosition = reverse
     ? "lg:-ml-16 lg:translate-x-8"
     : "lg:-mr-16 lg:-translate-x-8";
+  const textDirection = reverse ? "pl-0" : "pl-4";
 
   return (
     <motion.div
@@ -40,7 +43,7 @@ export default function ProjectsCard({
       {/* Content + Image (ترتيب خاص للموبايل) */}
       <div className="flex flex-col flex-1 justify-center p-6 sm:p-8 lg:p-12 gap-4 items-center lg:items-start">
         <motion.h3
-          className="text-2xl sm:text-3xl lg:text-5xl font-extrabold uppercase mb-2 leading-tight text-center lg:text-left"
+          className={`text-2xl ${textDirection}  sm:text-3xl lg:text-5xl font-extrabold uppercase mb-2 leading-tight text-center lg:text-left`}
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
@@ -66,15 +69,17 @@ export default function ProjectsCard({
           ))}
         </motion.div>
 
-        {/* الصورة تظهر هنا على الموبايل فقط */}
         <div className="block lg:hidden w-full flex items-center justify-center my-2">
           <motion.img
             src={image}
             alt={title}
-            className={`rounded-lg shadow-2xl w-full max-w-xs object-cover object-center transition transform hover:scale-105`}
+            // 1. شيلنا transition-all و duration-300 و hover:scale-105 من هنا
+            className={`rounded-lg shadow-2xl w-full max-w-xs object-cover object-center ${imagePosition}`}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            // 2. ضيفنا الهوفر هنا تبع Framer Motion
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: false }}
           />
         </div>
@@ -114,12 +119,16 @@ export default function ProjectsCard({
         <motion.img
           src={image}
           alt={title}
-          className={`rounded-lg shadow-2xl w-full max-w-xs sm:max-w-md lg:max-w-lg object-cover object-center transition transform hover:scale-105 ${imagePosition}`}
+          // 1. شيلنا transition-all و duration-300 و hover:scale-105 من هنا
+          className={`rounded-lg shadow-2xl w-full max-w-xs object-cover object-center ${imagePosition}`}
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          // 2. ضيفنا الهوفر هنا تبع Framer Motion
+          whileHover={{ scale: 1.4 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: false }}
         />
+
         <div className="line"></div>
       </motion.div>
       <div className="line block lg:hidden"></div>

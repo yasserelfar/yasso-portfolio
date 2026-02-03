@@ -3,16 +3,21 @@ import signify from '../assets/signify.png';
 import Astro from '../assets/Astro.jpeg'
 import FeedMe from '../assets/FeedMe.png'
 import BookStore from '../assets/BookStore.png'
+import Xora from '../assets/xora.svg'
 var signifyLink="https://www.linkedin.com/posts/yasser-muhamed-00b534234_graduationproject-signlanguage-machinelearning-activity-7349886752381120513-74Qf?utm_source=share&utm_medium=member_android&rcm=ACoAADp0igsBMb0bLzWBBnG6F5PNOFM4F-j8Wcs"
 var FeedMeLink="https://drive.google.com/file/d/1uCY4-qeLGFfxZn1vGTJbVn751M2htifG/view?usp=drivesdk"
 var BookStoreLink="https://drive.google.com/file/d/1uCseK29UpGRyQcq9rcsgN1Y2ajhpJI71/view?usp=drivesdk"
 var AstroLink="https://github.com/yasserelfar/Astro_React/tree/origin"
+var XoraLink = "https://yasserelfar.github.io/sass_landing_page/";
 export default function Projects() {  
   return (
-    <section id="portfolio" className="relative w-full bg-black text-white py-20 px-4 md:px-0 flex flex-col items-center overflow-visible">
-      
-    
-      <h2 className="relative z-10 text-3xl md:text-4xl font-extrabold uppercase mb-12 tracking-wide text-center">Projects</h2>
+    <section
+      id="portfolio"
+      className="relative w-full bg-black text-white py-20 px-4 md:px-0 flex flex-col items-center overflow-visible"
+    >
+      <h2 className="relative z-10 text-3xl md:text-4xl font-extrabold uppercase mb-12 tracking-wide text-center">
+        Projects
+      </h2>
       <div className="relative z-10 flex flex-col items-center gap-14 w-full">
         <ProjectsCard
           image={signify}
@@ -20,7 +25,16 @@ export default function Projects() {
           description="Signify is a real-time translator that converts Egyptian Sign Language into Arabic text or speech.
                       It uses AI and computer vision to help people with hearing or speaking difficulties communicate easily and naturally."
           link={signifyLink}
-          tags={["Website Design", "React", "ML","AI"]}
+          tags={["Website Design", "React", "ML", "AI"]}
+        />
+        <ProjectsCard
+          image={Xora}
+          title="Xora | sass landing page"
+          description="XORA AI Video Editor to be an easy to use, quick to learn, and surprisingly powerful.
+"
+          link={XoraLink}
+          tags={["React/vite", "Tailwind", "Design "]}
+          reverse={false}
         />
         <ProjectsCard
           image={Astro}
@@ -31,6 +45,7 @@ export default function Projects() {
           tags={["React", "E-commerce", "Design"]}
           reverse={true}
         />
+
         <ProjectsCard
           image={FeedMe}
           title="FeedMe"
@@ -53,8 +68,19 @@ Built using clean code and multiple Design Patterns for scalability and easy mai
       </div>
       {/* Bottom SVG Decorative Line */}
       <div className="absolute left-0 -bottom-8 w-full z-0 flex justify-center pointer-events-none">
-        <svg width="90%" height="48" viewBox="0 0 1200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polyline points="0,0 0,24 200,24 200,48 1000,48 1000,24 1200,24 1200,0" stroke="white" strokeWidth="2" fill="none" />
+        <svg
+          width="90%"
+          height="48"
+          viewBox="0 0 1200 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="0,0 0,24 200,24 200,48 1000,48 1000,24 1200,24 1200,0"
+            stroke="white"
+            strokeWidth="2"
+            fill="none"
+          />
         </svg>
       </div>
     </section>
