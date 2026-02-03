@@ -34,7 +34,7 @@ export default function Projects() {
 "
           link={XoraLink}
           tags={["React/vite", "Tailwind", "Design "]}
-          reverse={false}
+          reverse={true}
         />
         <ProjectsCard
           image={Astro}
@@ -43,7 +43,7 @@ export default function Projects() {
                         navigation, high-quality visuals and safe checkout, it It ensures a seamless shopping experience"
           link={AstroLink}
           tags={["React", "E-commerce", "Design"]}
-          reverse={true}
+          reverse={false}
         />
 
         <ProjectsCard
@@ -54,6 +54,7 @@ export default function Projects() {
                         creative and practical cooking experience."
           link={FeedMeLink}
           tags={["Flutter", "Design"]}
+          reverse={true}
         />
         <ProjectsCard
           image={BookStore}
@@ -63,7 +64,6 @@ Built using clean code and multiple Design Patterns for scalability and easy mai
 "
           link={BookStoreLink}
           tags={["Android Native", "Design", "Design pattern"]}
-          reverse={true}
         />
       </div>
       {/* Bottom SVG Decorative Line */}
