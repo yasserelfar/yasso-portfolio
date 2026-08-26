@@ -5,6 +5,7 @@ export default function ProjectsCard({
   title,
   description,
   link,
+  githubLink,
   tags = [],
   reverse = false,
 }) {
@@ -106,6 +107,20 @@ export default function ProjectsCard({
         >
           View This Project
         </motion.a>
+        {githubLink && (
+          <motion.a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-zinc-500 px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-medium rounded transition hover:bg-zinc-800 text-center w-full sm:w-auto mb-4 lg:mb-0"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            viewport={{ once: false }}
+          >
+            View Code
+          </motion.a>
+        )}
       </div>
 
       {/* Image - تظهر فقط على الشاشات الكبيرة */}

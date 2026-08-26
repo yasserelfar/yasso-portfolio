@@ -25,6 +25,7 @@ export default function Projects() {
           description="Signify is a real-time translator that converts Egyptian Sign Language into Arabic text or speech.
                       It uses AI and computer vision to help people with hearing or speaking difficulties communicate easily and naturally."
           link={signifyLink}
+          githubLink="https://github.com/yasserelfar/signify"
           tags={["Website Design", "React", "ML", "AI"]}
         />
         <ProjectsCard
@@ -44,6 +45,7 @@ export default function Projects() {
           link={AstroLink}
           tags={["React", "E-commerce", "Design"]}
           reverse={false}
+          githubLink="https://github.com/yasserelfar/Astro_React"
         />
 
         <ProjectsCard
@@ -53,6 +55,7 @@ export default function Projects() {
                         input their fridge contents, and the app generates unique recipes based on those ingredients, providing a 
                         creative and practical cooking experience."
           link={FeedMeLink}
+          githubLink="https://github.com/yasserelfar/FeedMe_2"
           tags={["Flutter", "Design"]}
           reverse={true}
         />
@@ -63,6 +66,7 @@ export default function Projects() {
 Built using clean code and multiple Design Patterns for scalability and easy maintenance.
 "
           link={BookStoreLink}
+          githubLink="https://github.com/yasserelfar/OnlineBookStore"
           tags={["Android Native", "Design", "Design pattern"]}
         />
       </div>
