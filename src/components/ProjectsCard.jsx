@@ -95,7 +95,8 @@ export default function ProjectsCard({
           {description}
         </motion.p>
 
-        <motion.a
+        <div className="flex flex-col lg:flex-row gap-3 w-full sm:w-auto">
+          <motion.a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
@@ -106,21 +107,22 @@ export default function ProjectsCard({
           viewport={{ once: false }}
         >
           View This Project
-        </motion.a>
-        {githubLink && (
-          <motion.a
-            href={githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block border border-zinc-500 px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-medium rounded transition hover:bg-zinc-800 text-center w-full sm:w-auto mb-4 lg:mb-0"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            viewport={{ once: false }}
-          >
-            View Code
           </motion.a>
-        )}
+          {githubLink && (
+            <motion.a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-zinc-500 px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-medium rounded transition hover:bg-zinc-800 text-center w-full sm:w-auto mb-4 lg:mb-0"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              viewport={{ once: false }}
+            >
+              View Code
+            </motion.a>
+          )}
+        </div>
       </div>
 
       {/* Image - تظهر فقط على الشاشات الكبيرة */}
