@@ -68,16 +68,30 @@ export default function Hero() {
             >
               I create visually stunning and functional websites for businesses worldwide. If you’re looking for a sleek, high-performing website, drop me an email. If we’re aligned, I’ll provide a timeline and pricing.
             </motion.p>
-            <motion.a
-              href="#portfolio"
-              className="inline-block border border-white px-8 py-3 text-lg font-medium rounded transition hover:bg-white hover:text-black"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, delay: 0.7 }}
-              viewport={{ once: false }}
-            >
-              View My Work
-            </motion.a>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <motion.a
+                href="#portfolio"
+                className="inline-block border border-white px-8 py-3 text-lg font-medium rounded transition hover:bg-white hover:text-black text-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7, delay: 0.7 }}
+                viewport={{ once: false }}
+              >
+                View My Work
+              </motion.a>
+              <motion.a
+                href="https://drive.google.com/uc?export=download&id=1IUJ9SNnRgOpKXXJ8BDDyKc6ozq8GF5qG"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-orange-500 text-orange-500 px-8 py-3 text-lg font-medium rounded transition hover:bg-orange-500 hover:text-black text-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7, delay: 0.8 }}
+                viewport={{ once: false }}
+              >
+                Download CV
+              </motion.a>
+            </div>
           </div>
         </motion.div>
         {/* Right Side: Image with gradient overlay */}
