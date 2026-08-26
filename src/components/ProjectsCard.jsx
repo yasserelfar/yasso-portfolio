@@ -15,7 +15,6 @@ export default function ProjectsCard({
   const imagePosition = reverse
     ? "lg:-ml-16 lg:translate-x-8"
     : "lg:-mr-16 lg:-translate-x-8";
-  const textDirection = reverse ? "pl-0" : "pl-4";
 
   return (
     <motion.div
@@ -29,6 +28,7 @@ export default function ProjectsCard({
       <svg
         className="absolute inset-0 w-full h-full z-0 pointer-events-none hidden sm:block"
         viewBox="0 0 1200 420"
+        preserveAspectRatio="none"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -43,7 +43,7 @@ export default function ProjectsCard({
       {/* Content + Image (ترتيب خاص للموبايل) */}
       <div className="flex flex-col flex-1 justify-center p-6 sm:p-8 lg:p-12 gap-4 items-center lg:items-start">
         <motion.h3
-          className={`text-2xl ${textDirection}  sm:text-3xl lg:text-5xl font-extrabold uppercase mb-2 leading-tight text-center lg:text-left`}
+          className="text-2xl sm:text-3xl lg:text-5xl font-extrabold uppercase mb-2 leading-tight text-center lg:text-left"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
@@ -129,9 +129,9 @@ export default function ProjectsCard({
           viewport={{ once: false }}
         />
 
-        <div className="line"></div>
+        <div className="bg-white/20 h-px mt-[60px]"></div>
       </motion.div>
-      <div className="line block lg:hidden"></div>
+      <div className="block lg:hidden bg-white/20 h-px mt-[60px]"></div>
     </motion.div>
   );
 }

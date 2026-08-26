@@ -7,7 +7,7 @@ import Xora from '../assets/xora.svg'
 var signifyLink="https://www.linkedin.com/posts/yasser-muhamed-00b534234_graduationproject-signlanguage-machinelearning-activity-7349886752381120513-74Qf?utm_source=share&utm_medium=member_android&rcm=ACoAADp0igsBMb0bLzWBBnG6F5PNOFM4F-j8Wcs"
 var FeedMeLink="https://drive.google.com/file/d/1uCY4-qeLGFfxZn1vGTJbVn751M2htifG/view?usp=drivesdk"
 var BookStoreLink="https://drive.google.com/file/d/1uCseK29UpGRyQcq9rcsgN1Y2ajhpJI71/view?usp=drivesdk"
-var AstroLink="https://github.com/yasserelfar/Astro_React/tree/origin"
+var AstroLink="https://www.linkedin.com/feed/update/urn:li:activity:7353063090747277313/"
 var XoraLink = "https://yasserelfar.github.io/sass_landing_page/";
 export default function Projects() {  
   return (
