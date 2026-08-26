@@ -66,8 +66,7 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: false }}
             >
-              I create visually stunning and functional websites for businesses worldwide. If you’re looking for a sleek, high-performing website, drop me an email. If we’re aligned, I’ll provide a timeline and pricing.
-            </motion.p>
+I build full-stack products end to end: React on the front, Node.js, PostgreSQL and .NET Core on the back. Need someone who can take a project from idea to launch? Email me and I'll send back a timeline and pricing.            </motion.p>
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.a
                 href="#portfolio"
