@@ -20,7 +20,7 @@ export default function ContactSection() {
         <div className="absolute inset-0 bg-black/60 z-10" />
         <div className="relative z-20 flex items-center justify-center w-full h-full px-2 sm:px-4 py-6">
           <p className="text-white text-xs sm:text-lg lg:text-2xl text-center max-w-xl mx-auto">
-            If you're looking for a modern, high-impact website for your business, startup, or personal brand, feel free to <a href={contactLink} target='_blank' className="underline font-bold">contact me here</a>.
+            If you're looking for a modern, high-impact website for your business, startup, or personal brand, feel free to <a href={contactLink} target='_blank' className="underline font-bold text-orange-500">contact me here</a>.
           </p>
         </div>
       </div>

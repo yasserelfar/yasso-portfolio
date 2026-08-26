@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion";  
 
 export default function ProjectsCard({
   image,
@@ -62,7 +62,7 @@ export default function ProjectsCard({
           {tags.map((tag, idx) => (
             <span
               key={idx}
-              className="bg-zinc-800 text-xs px-3 py-1 rounded font-bold tracking-wide uppercase text-zinc-100"
+              className="bg-zinc-800 text-xs px-3 py-1 rounded font-bold tracking-wide uppercase text-orange-500"
             >
               {tag}
             </span>
@@ -98,7 +98,7 @@ export default function ProjectsCard({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block border border-white px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-medium rounded transition hover:bg-white hover:text-black text-center w-full sm:w-auto mb-4 lg:mb-0"
+          className="inline-block border border-orange-500 px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-medium rounded transition hover:bg-orange-500 hover:text-black text-center w-full sm:w-auto mb-4 lg:mb-0"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.5 }}

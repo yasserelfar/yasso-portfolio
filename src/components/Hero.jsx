@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="Hero md:bg-[position:0rem_0px] p-10 rounded-md relative min-h-screen flex items-stretch bg-black text-white overflow-hidden group"
+      className="Hero md:bg-[position:0rem_0px] p-10 pt-28 sm:pt-32 rounded-md relative min-h-screen flex items-stretch bg-black text-white overflow-hidden group"
     >
       <div className="w-full h-full filter grayscale group-hover:filter-none transition duration-500 flex items-stretch">
         {/* Left Side */}
@@ -47,7 +47,7 @@ export default function Hero() {
                 {showTypewriter && (
                   <Typewriter
                     key={inView ? "show" : "hide"}
-                    words={["Front-End "]}
+                    words={["Full Stack "]}
                     loop={false}
                     cursor
                     cursorStyle="|"
