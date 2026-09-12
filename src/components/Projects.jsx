@@ -1,18 +1,6 @@
 import ProjectsCard from './ProjectsCard';
-import signify from '../assets/signify.png';
-import Astro from '../assets/Astro.jpeg'
-import FeedMe from '../assets/FeedMe.png'
-import BookStore from '../assets/BookStore.png'
-import Xora from '../assets/xora.svg'
-import Clinic_image from '../assets/Clinic.png'
-var signifyLink="https://www.linkedin.com/posts/yasser-muhamed-00b534234_graduationproject-signlanguage-machinelearning-activity-7349886752381120513-74Qf?utm_source=share&utm_medium=member_android&rcm=ACoAADp0igsBMb0bLzWBBnG6F5PNOFM4F-j8Wcs"
-var FeedMeLink="https://drive.google.com/file/d/1uCY4-qeLGFfxZn1vGTJbVn751M2htifG/view?usp=drivesdk"
-var BookStoreLink="https://drive.google.com/file/d/1uCseK29UpGRyQcq9rcsgN1Y2ajhpJI71/view?usp=drivesdk"
-var AstroLink="https://www.linkedin.com/feed/update/urn:li:activity:7353063090747277313/"
-var XoraLink = "https://yasserelfar.github.io/sass_landing_page/";
-var Clinic="https://lnkd.in/p/eyTRq9hg";
-var clinic_Github="https://github.com/yasserelfar/Clinic-Mangment.git";
-export default function Projects() {  
+
+export default function Projects({ projects }) {
   return (
     <section
       id="portfolio"
@@ -21,65 +9,10 @@ export default function Projects() {
       <h2 className="relative z-10 text-3xl md:text-4xl font-extrabold uppercase mb-12 tracking-wide text-center">
         Projects
       </h2>
-      <div className="relative z-10 flex flex-col items-center gap-14 w-full">
-        <ProjectsCard
-          image={Clinic_image}
-          title="Clinci Mangment System"
-          description="A full-stack ASP.NET Core app that takes a clinic from patient registration to diagnosis, with role-based dashboards for Admin, Doctor, and Reception, automatic doctor matching, and full patient history across every visit."
-          link={Clinic}
-          githubLink={clinic_Github}
-          tags={["ASP.NET Core"," Entity Framework", "PostgreSQL", " MVC Architecture Healthcare"]}
-        />
-        <ProjectsCard
-          image={signify}
-          title="Signify"
-          description="Signify is a real-time translator that converts Egyptian Sign Language into Arabic text or speech.
-                      It uses AI and computer vision to help people with hearing or speaking difficulties communicate easily and naturally."
-          link={signifyLink}
-          githubLink="https://github.com/yasserelfar/signify"
-          tags={["Website Design", "React", "ML", "AI"]}
-        />
-        <ProjectsCard
-          image={Xora}
-          title="Xora | sass landing page"
-          description="XORA AI Video Editor to be an easy to use, quick to learn, and surprisingly powerful.
-"
-          link={XoraLink}
-          tags={["React/vite", "Tailwind", "Design "]}
-          reverse={true}
-        />
-        <ProjectsCard
-          image={Astro}
-          title=" Astro fashion "
-          description=" The website offers an easy-to-use platform that includes a variety of clothes and accessories, thanks to easy 
-                        navigation, high-quality visuals and safe checkout, it It ensures a seamless shopping experience"
-          link={AstroLink}
-          tags={["React", "E-commerce", "Design"]}
-          reverse={false}
-          githubLink="https://github.com/yasserelfar/Astro_React"
-        />
-
-        <ProjectsCard
-          image={FeedMe}
-          title="FeedMe"
-          description=" My new app simplifies cooking by offering random recipes tailored to the user's available ingredients. Users 
-                        input their fridge contents, and the app generates unique recipes based on those ingredients, providing a 
-                        creative and practical cooking experience."
-          link={FeedMeLink}
-          githubLink="https://github.com/yasserelfar/FeedMe_2"
-          tags={["Flutter", "Design"]}
-          reverse={true}
-        />
-        <ProjectsCard
-          image={BookStore}
-          title="Book Store"
-          description="A mobile app with smart search (text, voice, camera, barcode) and a clear admin panel to manage products and orders.
-Built using clean code and multiple Design Patterns for scalability and easy maintenance.
-"
-          link={BookStoreLink}
-          githubLink="https://github.com/yasserelfar/OnlineBookStore"
-          tags={["Android Native", "Design", "Design pattern"]}
-        />
+      <div className="relative z-10 flex w-full flex-col items-center gap-14">
+        {projects.map((project) => (
+          <ProjectsCard key={project.id} {...project} />
+        ))}
       </div>
       {/* Bottom SVG Decorative Line */}
       <div className="absolute left-0 -bottom-8 w-full z-0 flex justify-center pointer-events-none">

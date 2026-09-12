@@ -79,7 +79,7 @@ I build full-stack products end to end: React on the front, Node.js, PostgreSQL 
                 View My Work
               </motion.a>
               <motion.a
-                href="https://drive.google.com/uc?export=download&id=1IUJ9SNnRgOpKXXJ8BDDyKc6ozq8GF5qG"
+                href="https://drive.google.com/file/d/1ixJanWQw-m9DYRVGCpCces8CGrjhaz16/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block border border-orange-500 text-orange-500 px-8 py-3 text-lg font-medium rounded transition hover:bg-orange-500 hover:text-black text-center"
